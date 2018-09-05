@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Calculator">
+    <meta name="author" content="Steve VSN">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-card one">
+            <div class="top" id="top">
+                <div class="wrapper">
+
+                    <h1>Cal·cu·late</h1>
+                    <h3><em>/ˈkalkyəˌlāt/</em></h3>
+                    <h5 style="font-family: 'VT323', monospace;"> | Add (+) | Sub (-) | Mult (*) | Div (/) | </h5>
+
+                    <p class="temp">
+                        <span class="temp-value" id="tempA">95</span>
+                        <a href="javascript:;">
+                            <span class="temp-type"></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="wrapper">
+                  <div class="text-center" style="padding-top: 2%; padding-bottom: 2%">
+                      <input id="formula" class="transparent-input" value="95"></input>
+                  </div>
+                </div>
+              </div>
+              <style>
+                  input.transparent-input{
+                     background-color:rgba(0,0,0,0) !important;
+                     border:none !important;
+                  }
+              </style>
+      
+        </div>
+
+    </div>
+
+
+</body>
+<script>
+  var path = require('path')
+  var paths = path.join(__dirname, "calc.js");
+  require(paths)
+</script>
+
+</html>
