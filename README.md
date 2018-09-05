@@ -8,9 +8,6 @@
 * Python 3.6/2.7
 * Latest version of Node.js
 
-```
-Give examples
-```
 ## Built With
 
 * [Electron](https://electronjs.org/docs) - The web framework used
